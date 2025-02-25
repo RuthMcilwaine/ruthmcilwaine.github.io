@@ -1,6 +1,6 @@
 # My Portfolio
 
-This repository contains my portfolio. Originally created as static web pages, the project has been modernized to improve maintainability and responsiveness.
+This repository contains my portfolio. Originally created as static web pages, the project is a work in progress. I want to modernize it to improve maintainability and responsiveness.
 
 ## Project Updates
 
