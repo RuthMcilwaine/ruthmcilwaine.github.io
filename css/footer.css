@@ -20,8 +20,10 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+  padding-bottom: 10px;
 }
 
 .copyright {
   text-align: center;
+  padding-bottom: 10px;
 }
