@@ -79,28 +79,4 @@ body {
 	justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 600px) {
-	
-body {
-	background-image: url("../images/responsive.png");
-	background-size: cover;
-}
-
-.navbar {
-	display: none;
-}
-
-.menu-container {
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
-	display: block;
-}
-
-.RM-title { 
-	position: absolute;
-	max-width: 60%;
-	height: auto;
-	padding: 5%;
-}
-}
 		

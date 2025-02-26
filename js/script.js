@@ -1,6 +1,6 @@
 window.onload = function () {
   // Load the header content
-  fetch('components/header.html')
+  fetch('../components/header.html')
     .then((response) => {
       if (!response.ok) {
         throw new Error('Failed to fetch header');
@@ -15,7 +15,7 @@ window.onload = function () {
     });
 
   // Load the footer content
-  fetch('components/footer.html')
+  fetch('../components/footer.html')
     .then((response) => {
       if (!response.ok) {
         throw new Error('Failed to fetch footer');
