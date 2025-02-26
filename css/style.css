@@ -10,10 +10,10 @@
   }
 
 body { 
-	height: 100%;
+	height: 100vh;
 	font-family: Tahoma,Verdana,Segoe,sans-serif; 
 	background-image: url("../images/image.jpg");
-  background-repeat: no-repeat;
+  	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -21,8 +21,8 @@ body {
 .grid {
 	width: 100%;
 	height: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  	display: grid;
+  	grid-template-columns: 50% 50%;
 	grid-template-rows: 150px 600px 150px;
 }
 
