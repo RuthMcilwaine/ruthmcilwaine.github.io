@@ -1,18 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+
+}
+
 .about-me-container {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
   width: 50%;
-  height: 70%;
-  justify-self: center;
-  text-align: center;
+  height: auto; 
+  text-align: justify;
+  margin: 10% auto 0;
+}
+
+.text-container {
+  text-align: justify;
+  padding: 80px;
 }
 
 @media only screen and (max-width: 600px) {
   .about-me-container {
-      grid-column: 1 / 3;
-      grid-row: 2 / 3;
-      width: 100%; /* Take full width on smaller screens */
-      height: auto; /* Let height adjust to content */
-      margin-right: 0; /* Remove margin */
+      width: 100%;
+      height: auto;
   }
 }
