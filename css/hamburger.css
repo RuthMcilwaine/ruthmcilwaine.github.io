@@ -13,11 +13,3 @@
     display: block;
 }
 
-.menu ul a {
-    list-style-type: none;
-    font-family: Tahoma;
-    font-weight: 200;
-    font-size: 20px;
-    text-decoration: none;
-    color: #ffffff;
-}
