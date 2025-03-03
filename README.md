@@ -19,7 +19,7 @@ The live version is updated regularly as I improve its design and functionality.
 
 To view the portfolio locally, clone the repository and open it in your browser:
 
-git clone https://github.com/RuthMcilwaine/ruthmcilwaine.github.io.git
+git clone https://github.com/RuthMcilwaine/ruthmcilwaine.github.io.git    
 cd ruthmcilwaine.github.io
 
 Open index.html in your browser.
