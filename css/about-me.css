@@ -1,15 +1,24 @@
 .container {
   display: flex;
   justify-content: center;
+  margin: 40px auto;
   padding: 40px;
+  width: 50%;
+  height: auto; 
+  text-align: justify;
+  margin: 10% auto 0;
+  padding: 80px;
+}
 
+.text-container h1 {
+  margin-bottom: 20px;
 }
 
 .about-me-container {
   width: 50%;
   height: auto; 
-  text-align: justify;
   margin: 10% auto 0;
+  margin-bottom: 20px;
 }
 
 .text-container {

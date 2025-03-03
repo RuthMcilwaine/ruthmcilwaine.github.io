@@ -13,10 +13,14 @@
 body { 
 	height: 100vh;
 	font-family: Tahoma,Verdana,Segoe,sans-serif; 
-	background-image: url("../images/image.jpg");
+	background-image: url("../images/background.jpg");
   	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+
+h1 {
+  font-size: 2vw;
 }
 
 .grid {
@@ -54,12 +58,16 @@ body {
 	text-align: center;
 }
 
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  height: 60vh;
+}
+
 .RM-title {
-	position: absolute;
 	max-width: 30%;
 	height: auto;
-	top: 25%;
-	left: 15%;
 }
 
 .link {
