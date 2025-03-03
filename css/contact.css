@@ -1,47 +1,47 @@
 
 .container {
-  width: 50%; /* Adjust width to prevent form from being too wide */
-  margin: 50px auto; /* Centers the form on the page with space above */
-  padding: 40px; /* Adds inner spacing */
-  background-color: #c7b1b4; /* Set background color */
-  border-radius: 10px; /* Rounds corners */
+  width: 50%;
+  margin: 50px auto; 
+  padding: 40px;
+  background-color: #c7b1b4; 
+  border-radius: 10px; 
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 h2 {
-  display: block; /* Ensures it takes the full width */
-  margin-bottom: 20px; /* Adds space between the heading and form */
+  display: block; 
+  margin-bottom: 20px; 
 }
 
 form {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  gap: 5px; /* Adds spacing between form elements */
+  flex-direction: column;
+  gap: 5px; 
   width: 100%; 
   text-align: left;
 }
 
 input,
 textarea {
-  width: 100%; /* Make inputs take full width of the form */
-  padding: 10px; /* Adds spacing inside the inputs */
-  border: 1px solid #ccc; /* Light border for visibility */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Improves readability */
+  width: 100%;
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  font-size: 16px; 
 }
 
 
 @media only screen and (max-width: 600px) {
   .container {
-      width: 90%; /* Make it more responsive for smaller screens */
-      padding: 20px; /* Reduce padding for mobile */
+      width: 90%;
+      padding: 20px;
   }
 }
 
 button {
-  background-color: #6b4f4f; /* A complementary color */
-  color: white; /* Ensures text contrast */
+  background-color: #6b4f4f;
+  color: white;
   border: none;
   padding: 12px;
   border-radius: 5px;

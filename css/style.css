@@ -7,6 +7,7 @@
 
 * {
 	margin: 0px;
+  padding: 0;
   }
 
 body { 
@@ -24,10 +25,6 @@ body {
   	display: grid;
   	grid-template-columns: 50% 50%;
 	grid-template-rows: 150px 600px 150px;
-}
-
-.menu-container {
-	display: none;
 }
 
 .logo-container {
@@ -51,7 +48,6 @@ body {
 .text-container {
 	background-color: #c7b1b4;
 	padding: 10px 30px 10px 30px;
-	/* opacity: 0.5; */
 	border-radius: 4px;
 	width: 110%;
 	height: 120%;
