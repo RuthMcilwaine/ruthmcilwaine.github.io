@@ -1,17 +1,25 @@
-# My Portfolio
+###My Portfolio
 
-This repository contains my portfolio. Originally created as static web pages, the project is a work in progress. I want to modernize it to improve maintainability and responsiveness.
+This repository contains my personal portfolio, a fully static web app designed for fast load times, reliability, and responsiveness across different screen sizes. Originally built as a static web app, the project remains static while I continue to refine its design, maintainability, and structure.
 
-## Project Updates
+###Live Web App
 
-In this update, I have modularized the HTML and CSS components to eliminate redundancy, making the site easier to maintain and update in the future. The portfolio is fully static, ensuring fast load times and reliability while still being responsive across different devices.
+You can view the live version of my portfolio here:
+[https://ruthmcilwaine.github.io](https://ruthmcilwaine.github.io)
 
-## Installation
+The live version is updated regularly as I improve its design and functionality.
 
-To view the portfolio locally, clone the repository:
+###Project Updates
 
-```bash
+    Modularized HTML and CSS components to reduce redundancy and improve maintainability.
+    Improved responsiveness for better viewing on desktops, tablets, and mobile devices.
+    Reorganized the project structure to follow best practices, making future updates easier.
+
+###Installation
+
+To view the portfolio locally, clone the repository and open it in your browser:
+
 git clone https://github.com/RuthMcilwaine/ruthmcilwaine.github.io.git
 cd ruthmcilwaine.github.io
 
-Open index.html in your browser to view the project.
+Open index.html in your browser.
