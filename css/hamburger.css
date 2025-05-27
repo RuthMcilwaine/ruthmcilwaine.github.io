@@ -3,40 +3,11 @@
     background: none;
     border: none;
     cursor: pointer;
-    text-align: right;
+    text-align: left;
     color: white;
-    padding-right: 50px;
-}
-
-.menu-container {
-  display: flex;
-  justify-content: flex-centre;      
-}
-
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-  height: 60vh;
-}
-
-.RM-title {
-	max-width: 30%;
-	height: auto;
+    padding-left: 80px;
 }
 
 .menu {
     display: none;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-.menu li {
-  padding: 10px;
 }
