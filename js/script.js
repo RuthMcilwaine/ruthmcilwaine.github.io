@@ -32,5 +32,12 @@ window.onload = function () {
         }
     });
     console.log("Loaded after");
-    loadComponent('../components/footer.html', 'footer');
+    loadComponent('../components/footer.html', 'footer', function () {
+        if (window.location.pathname.includes('portfolio.html')) {
+            const portfolioLink = document.querySelector('a[href*="portfolio.html"]');
+            if (portfolioLink) {
+                portfolioLink.style.display = 'none';
+            }
+        }
+    });
 };

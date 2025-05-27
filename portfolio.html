@@ -15,49 +15,33 @@
 </head>
 
 <body>
-
     <div id="header"></div>
+        <div class="portfolio-container">
+            <div class="text-container">
+              <h1>- Portfolio -</h1>
 
-    <div class="portfolio-container">
-        <div class="text-container">
-          <h1>- Portfolio -</h1>
-
-          <div class="links">
-              <ul>
-                  <li>
-                      <a href="https://github.com/RuthMcilwaine/React" target="_blank" rel="noopener noreferrer">
-                          <i class="fab fa-github" id="portfolio-icon"></i> React Colour Picker
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://github.com/RuthMcilwaine/todo-list" target="_blank" rel="noopener noreferrer">
-                          <i class="fab fa-github"></i> Todo List (class based)
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://github.com/RuthMcilwaine/todo-app" target="_blank" rel="noopener noreferrer">
-                          <i class="fas fa-external-link-alt"></i> Todo List (functional)
-                      </a>
-                  </li>
-              </ul>
+              <div class="links">
+                  <ul>
+                      <li>
+                          <a href="https://github.com/RuthMcilwaine/React" target="_blank" rel="noopener noreferrer">
+                              <i class="fab fa-github" id="portfolio-icon"></i> React Colour Picker
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://github.com/RuthMcilwaine/todo-list" target="_blank" rel="noopener noreferrer">
+                              <i class="fab fa-github"></i> Todo List (class based)
+                          </a>
+                      </li>
+                      <li>
+                          <a href="https://github.com/RuthMcilwaine/todo-app" target="_blank" rel="noopener noreferrer">
+                              <i class="fab fa-github"></i> Todo List (functional)
+                          </a>
+                      </li>
+                  </ul>
+              </div>
           </div>
-      </div>
-  </div>
-
+        </div>
     <div id="footer"></div>
-
-    <script>
-      window.onload = function () {
-          
-          if (window.location.pathname.includes('portfolio.html')) {
-              const portfolioIcon = document.getElementById('portfolio-icon');
-              if (portfolioIcon) {
-                  portfolioIcon.style.display = 'none';
-              }
-          }
-      };
-  </script>
-  
   <script src="./js/script.js"></script>
 </body>
 
