@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
     body {
         background-image: url("../images/responsive.png");
@@ -20,38 +20,55 @@
       display: block;
     }
   
-    .menu.active {
+    .menu.show {
       display: block;
     }
-  
+
+    .menu {
+        display: none;
+        position: relative;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
     .menu ul {
-      flex-direction: column; /* Stack the menu items vertically */
-      background-color: #333;
-      position: absolute;
-      top: 50px;
-      left: 0;
-      width: 100%;
-      text-align: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        z-index: 999;
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
   
     .menu li {
-      padding: 15px;
-      background-color: #444;
-      border-top: 1px solid #fff;
+        width: 100%;
+        background-color: #444;
+        border-top: 1px solid #fff;
     }
-  
+
     .menu li a {
-      color: #fff;
-      text-decoration: none;
-      display: block;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
     }
-  
+
     .menu li:hover {
       background-color: #555;
     }
 
     .RM-title {
-        /* position: absolute; */
         max-width: 60%;
         height: auto;
         padding: 5%;
