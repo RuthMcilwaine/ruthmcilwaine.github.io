@@ -4,10 +4,11 @@
 @import url("portfolio.css");
 @import url("contact.css");
 @import url("hamburger.css");
+@import url("responsive.css");
 
 * {
 	margin: 0px;
-  padding: 0;
+  	padding: 0;
   }
 
 body { 
