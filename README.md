@@ -1,6 +1,6 @@
 **My Portfolio**
 
-This repository contains my personal portfolio, a fully static web app designed for fast load times, reliability, and responsiveness across different screen sizes. Originally built as a static web app, the project remains static while I continue to refine its design, maintainability, and structure.
+This repository contains my personal portfolio site—built as a fully static web app for fast load times, reliability, and responsive design across devices. While it remains static to support deployment via GitHub Pages, the codebase has evolved to incorporate modern JavaScript practices and tooling. I continue to refine its design, structure, and maintainability to reflect my current front-end development skills.
 
 **Live Web App**
 
