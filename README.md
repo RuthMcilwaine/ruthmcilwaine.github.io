@@ -10,6 +10,18 @@ You can view the live version of my portfolio here:
 
 The live version is updated regularly as I improve its design and functionality.
 
+## Table of Contents
+
+- [Project Updates](#project-updates)
+- [Installation](#installation)
+- [Description](#description)
+- [Design Process](#design-process)
+  - [Mood Board](#mood-board)
+  - [Figma Wireframe and Logo](#wireframe-and-logo)
+- [Planning](#planning)
+  - [Timeline](#timeline)
+  - [Trello Boards](#trello-boards)
+
 ## Project Updates
 
 - Modularized HTML and CSS components to reduce redundancy and improve maintainability.
