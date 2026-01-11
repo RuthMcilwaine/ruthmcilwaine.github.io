@@ -1,0 +1,298 @@
+
+/* -----------------------------
+   Global
+----------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #2A3A4A;
+    position: relative;
+    line-height: 1.6;
+  }
+  
+  /* Background image with subtle overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(184, 168, 159, 0.2);
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5 {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #2A3A4A;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* -----------------------------
+     Hero / Banner
+  ----------------------------- */
+  .text-container {
+    background-color: rgba(199, 177, 180, 0.95);
+      padding: 48px 30px;
+      border-radius: 10px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      box-sizing: border-box;
+  }
+  
+  .hero-text {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+    margin-bottom: 400px;
+  }
+  
+  .hero-text .name-line {
+    font-weight: 400;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+    line-height: 1.1;
+  }
+  
+  .hero-text .surname-line {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 8px; /* space before title */
+    line-height: 1.1;
+  }
+  
+  .hero-text .title-line {
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+  
+  /* -----------------------------
+     Section Overlay (About/Skills, Contact)
+  ----------------------------- */
+  .section-overlay {
+    background: rgba(199, 177, 180, 0.85);
+    padding: 50px 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 100px auto;
+    text-align: center;
+    margin-bottom: 300px;
+  }
+  
+  .section-overlay h1 {
+    color: #22303A;
+    margin-bottom: 20px;
+  }
+  
+  .section-overlay p, 
+  .section-overlay ul {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  /* -----------------------------
+     Portfolio Grid
+  ----------------------------- */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .project-card {
+    background-color: rgba(255, 255, 255, 0.9); /* light card */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    text-decoration: none;
+    color: #2A3A4A;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.65);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  }
+  
+  .project-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Card Overlay */
+  .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(199, 177, 180, 0.65);
+    color: #2A3A4A;
+    transition: background 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .project-card:hover .card-overlay {
+    background: rgba(199, 177, 180, 0.95);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
+  }
+  
+  .card-overlay h2 {
+    margin: 0 0 5px;
+    font-size: 1.2rem;
+  }
+  
+  .card-overlay p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  
+  /* -----------------------------
+     Contact Form
+  ----------------------------- */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  form input,
+  form textarea {
+    width: 85%;
+    align-self: center;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    align-self: flex-end;
+    padding: 11px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgba(58,141,135,0.7); /* muted teal */
+    color: #ffffff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    transform: scale(1.05);
+    background-color: rgba(58,141,135,0.85);
+  }
+
+/* -----------------------------
+   Footer
+----------------------------- */
+.footer {
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(42, 58, 74, 0.95);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Icons row */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;             /* space between icons */
+  margin-bottom: 15px;   /* space before copyright */
+}
+
+.footer-icons svg {
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+  display: inline-block;   /* makes them behave like icons */
+  vertical-align: middle;  /* optional, aligns nicely */
+  transition: transform 0.2s ease;
+}
+
+.footer-icons svg:hover {
+  transform: scale(1.1);
+}
+
+/* Copyright */
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
+}
+   
+  /* -----------------------------
+     Responsive
+  ----------------------------- */
+  @media only screen and (max-width: 600px) {
+  
+    .section-overlay {
+      padding: 20px;
+      margin: 20px auto;
+    }
+  
+    h1 {
+      color: #22303A;
+      font-size: 1.6rem;
+    }
+  
+    .hero-text .name-line {
+      font-size: 2rem;
+    }
+  
+    .hero-text .surname-line {
+      font-size: 1.6rem;
+    }
+  
+    .hero-text .title-line {
+      font-size: 1.2rem;
+    }
+  
+    .portfolio-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+  
