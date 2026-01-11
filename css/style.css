@@ -91,6 +91,7 @@
      Section Overlay (About/Skills, Contact)
   ----------------------------- */
   .section-overlay {
+    scroll-margin-top: 150px;
     background: rgba(199, 177, 180, 0.85);
     padding: 50px 30px;
     border-radius: 10px;
@@ -221,6 +222,38 @@
     background-color: rgba(58,141,135,0.85);
   }
 
+  /* -----------------------------
+   Project Nav
+----------------------------- */
+  .project-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.85); /* semi-transparent overlay */
+    backdrop-filter: blur(5px);            /* optional frosted effect */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;           /* allow wrapping on smaller screens */
+    gap: 10px 20px;            /* row + column gap */
+    z-index: 1000;             /* above everything else */
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  }
+  
+  .project-nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;       /* prevent link text from breaking internally */
+    transition: color 0.2s;
+  }
+  
+  .project-nav a:hover {
+    color: teal;
+  }
+  
 /* -----------------------------
    Footer
 ----------------------------- */
