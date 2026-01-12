@@ -43,78 +43,84 @@
   <section id="overview" class="section-overlay">
     <h2>Project Overview</h2>
     <p></p>
-    <p></p>
+    <p>McKinnon Netball Club required a simple, easy-to-manage website that could be updated by committee members with minimal technical experience. The goals were to improve usability, accessibility, performance, and search visibility, while maintaining the club’s branding in red, white, and blue</p>
   </section>
 
   <!-- Constraints -->
   <section id="constraints" class="section-overlay">
     <h2>Constraints</h2>
     <p></p>
-    <!-- <p>The project faced several real-world constraints that shaped both the delivery framework and my approach:</p>
     <ul>
-      <li>The club is run by volunteers with varying availability, requiring consensus-based decisions.</li>
-      <li>The membership is predominantly retired, which influenced accessibility and usability priorities.</li>
-      <li>The site had a legacy WordPress structure with inconsistent page naming, outdated plugins, and shared credentials.</li>
-      <li>No backups or staging environment.</li>
+      <li>Limited technical experience among volunteers; the site needed to be easy to update.</li>
+      <li>Budget restrictions meant relying on free or low-cost plugins.</li>
+      <li>The existing website used WordPress with Divi and WooCommerce, so changes needed to work with the current setup.</li>
       <li>Live site actively used by members, requiring minimal disruption.</li>
     </ul>
-    <p>These factors required careful planning for every change, ensuring that technical decisions were safe and the committee remained confident in the process.</p> -->
+    <p>These factors required careful planning for every change, ensuring that technical decisions were safe and the committee remained confident in the process.</p>
   </section>
 
   <!-- Role & Delivery -->
   <section id="role-delivery" class="section-overlay">
     <h2>My Role & Delivery</h2>
     <p></p>
-    <!-- <p>I owned the project end-to-end, including:</p>
       <ul class="left">
-        <li>discovery and benchmarking against local clubs</li>
-        <li>risk assessment and sequencing of work</li>
-        <li>delivery framework design (staging, backups, rollback)
+        <li>Provided ongoing volunteer consulting, guiding the committee on website management and UX improvements.</li>
+        <li>Installed and configured plugins to simplify content management:
+          <ul> 
+            <li>TablePress → Editable tables for timetables and results.</li>
+            <li>Adminimize → Simplified the WordPress dashboard for non-technical users.</li>
+          </ul>
         </li>
-        <li>navigation and information architecture</li>
-        <li>accessibility and SEO decisions</li>
-        <li>stakeholder communication and approvals</li>
-        <li>scope management across phases</li>
+        <li>Optimized images, page caching, and site structure to improve load times and overall user experience.</li>
+        <li>Updated WooCommerce product management with a plugin to allow straightforward price and stock updates.</li>
+        <li>Created documentation for the committee on how to manage content, forms, tables, and images.</li>
+        <li>Monitored performance, accessibility, and SEO with Lighthouse and analytics tools.</li>
       </ul>
-    <p>I made deliberate decisions on what not to change yet, balancing speed of delivery with committee comfort and technical safety.</p>
-    <p>Delivery Framework Highlights:</p>
-      <ul class="left">
-        <li>Created full staging environment using WP Staging and a second purpose-specific staging site for theme and PHP upgrades</li>
-        <li>Completed full cPanel backup including files, database, and email configuration</li>
-        <li>Verified restore paths and rollback procedures</li>
-        <li>Prioritised phased delivery to ensure clarity, reduce risk, and incorporate feedback iteratively</li>
-      </ul> -->
   </section>
 
   <!-- Key Decisions -->
   <section id="key-decisions" class="section-overlay">
     <h2>Key Decisions</h2>
     <p></p>
-    <!-- <ul>
-      <li><strong>1. Phased Delivery with Staging-Led Feedback</strong> 
-        <p>Instead of a full redesign in a single release, I delivered the project in defined phases. This approach prevented overwhelming the committee and built confidence. Each phase focused on a specific area — navigation, homepage, content, or gallery — and required explicit sign-off before moving forward. The staging site acted as a shared review space, letting members explore changes at their own pace and provide asynchronous feedback. This approach minimized risk, maintained clarity, and allowed the project to progress steadily without surprises. Phasing was about protecting trust.</p></li>
+    <ul>
+      <li><strong>Use WordPress over a custom SPA:</strong> 
+        Ensured long-term manageability for non-technical volunteers.</li>
         <p></p>
-      <li><strong>2. Gallery Architecture & Content Governance</strong> 
-        <p>A major challenge was how the club managed event photos: each event had its own page, resulting in a cluttered dashboard, inconsistent presentation, and slower site performance. I evaluated multiple solutions, including keeping pages, manual conversion to posts, and a post-based archive with categories. The final decision was to implement a **post-based, category-driven gallery system**. This allowed older events to be archived efficiently, reduced administrative effort for the committee, and enabled the homepage to automatically surface the latest posts. Committee approval was sought before expanding the system, ensuring everyone understood the long-term benefits.</p></li>
+      <li><strong>Performance & Speed Enhancements:</strong> 
+        W3 Total Cache, lazy loading, and optimized large images to reduce page load times.</li>
         <p></p>
-      <li><strong>3. Staging + Backup Strategy Beyond Original Scope</strong> 
-        <p>Upgrading PHP and core plugins carried a high risk of site breakage. To mitigate this, I created an isolated staging environment for testing, documented rollback procedures, and verified restore paths. This ensured platform stability, allowed high-risk updates to be applied safely, and kept the live site uninterrupted.</p></li>
+        <li><strong>SEO Improvements:</strong>
+          <ul>
+            <li>Yoast SEO for meta descriptions and structured data.</li>
+            <li>Descriptive permalinks / slugs (e.g., /about-us/) for clarity and keyword relevance.</li>
+            <li>Redirection plugin to handle URL changes safely, accommodating visitors who had bookmarked old URLs and ensuring Google indexing picked up the new links.</li>
+            <li>Sitemap.xml generated and submitted to Google for improved search indexing.</li>
+          </ul>
+        </li>
         <p></p>
-          <li><strong>4. Accessibility & SEO Enhancements</strong> 
-            <p>Given the predominantly retired audience, I prioritised usability improvements. I refined menu visibility, added hover and underline states, simplified page structures, and ensured headings and labels were clear and descriptive. These enhancements improved navigation, accessibility, and information hierarchy, while also benefiting search engine visibility.</p></li>
-    </ul> -->
+          <li><strong>Content Editing Simplicity:</strong> 
+            TablePress and Adminimize to reduce complexity for non-technical users.</li>
+            <p></p>
+            <li><strong>Maintain Divi Design:</strong> 
+              Preserved visual consistency while improving functionality.</li>
+              <p></p>
+              <li><strong>Accessibility Focus:</strong> 
+                Added descriptive alt text, adjusted navigation menus, and checked ARIA roles.</li>
+    </ul>
   </section>
 
   <!-- Outcome -->
   <section id="outcome" class="section-overlay">
     <h2>Outcome</h2>
     <p></p>
-    <!-- <p>The phased, risk-aware approach delivered measurable results and strengthened long-term sustainability. Navigation was simplified and more accessible, platform health was stabilised, and technical debt was reduced. The committee could explore the staging site at their own pace and provide feedback without pressure. Importantly, there were no live-site disruptions, and the process established a low-risk workflow for future updates. This structured delivery demonstrates thoughtful planning, stakeholder management, and sound technical judgment</p>
-    <p>Key highlights:</p>
     <ul>
-      <li>Navigation simplified and optimized for committee and visitor use</li>
-      <li>Platform health stabilised, reducing future maintenance overhead</li>
-    </ul> -->
+      <li><strong>Performance:</strong> Lighthouse score improved from 59 → 87.</li>
+      <li><strong>Accessibility:</strong> Improved from 75 → 78 through alt text, navigation adjustments, and ARIA checks.</li>
+      <li><strong>SEO:</strong> Improved from 69 → 85 via descriptive URLs, safe redirects, meta descriptions, sitemap.xml submission, and alt text.</li>
+      <li>Committee members can now easily update pages, tables, images, and WooCommerce products without technical support.</li>
+      <li>The site is <strong>faster, more accessible, and easier to maintain</strong>, creating a better experience for club members and visitors alike.</li>
+      <li><strong>Real-world impact:</strong> The committee were relieved they didn’t need to commission a new website — they had assumed a rebuild was necessary because the site felt slow, but the optimizations resolved the issues efficiently</li>
+    </ul>
   </section>
 
   <footer id="footer" class="footer">
