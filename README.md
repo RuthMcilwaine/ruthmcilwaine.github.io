@@ -1,7 +1,7 @@
 
 # My Portfolio
 
-This repository contains my personal portfolio site—built as a **single-page application (SPA)** for fast load times, reliability, and responsive design across devices. While it remains static to support deployment via GitHub Pages, the codebase has evolved to incorporate modern HTML, CSS, and JavaScript practices. The design is minimalist, mobile-first, and emphasizes readability and visual clarity.
+This repository contains my personal portfolio site—built as a single-page experience for the homepage, About Me, Skills, Portfolio overview, and Contact sections, providing fast load times, reliability, and responsive design across devices. While it remains static to support deployment via GitHub Pages, the codebase uses modern HTML, CSS, and JavaScript practices. The design is minimalist, mobile-first, and emphasizes readability and visual clarity. Individual portfolio projects open in separate pages for detailed views.
 
 ## Live Web App
 
@@ -16,11 +16,12 @@ You can view the live version of my portfolio here:
 
 ## Project Updates
 
-* Converted the portfolio into a **single-page application**, consolidating About Me, Skills, Portfolio, and Contact sections on `index.html`.
-* Removed multi-page navigation, navbar, and hamburger menu for a cleaner, scroll-based SPA experience.
-* Added **overlay containers** for text content to improve contrast against the background.
+* Consolidated **About Me, Portfolio overview, and Contact sections** on index.html for a smooth scroll-based experience.
+* Maintained **separate pages for detailed portfolio projects** to allow full content per project without cluttering the main page.
+* Added a **fixed navigation bar** on project pages for easy navigation between sections.
+* Added **overlay containers** for text content to improve readability and contrast against background images.
 * Implemented responsive **project cards** linking to detailed project pages.
-* Modernized folder and file structure for easier maintenance and scalability.
+* Modernized **folder and file structure** for easier maintenance and scalability.
 
 ## Installation
 
@@ -39,10 +40,12 @@ The purpose of my website is to **showcase my work, skills, and design style** t
 
 Key features include:
 
-* **SPA layout:** smooth scroll navigation between sections.
-* **Portfolio overview:** project cards linking to individual project pages.
-* **Hero/banner section:** prominently displays my name, title, and logo.
-* **Footer links:** GitHub, LinkedIn, and contact page using Font Awesome icons.
+* **Single-page experience:** smooth scroll navigation between About Me, Skills, Portfolio overview, and Contact sections on the homepage.
+* **Portfolio overview:** responsive project cards linking to detailed project pages, with a **fixed navigation bar** for easy access to each section.
+* **Hero/banner section:** pprominently displays my name, title, and logo, with links to scroll to key sections.
+* **Overlay content containers:** improve readability and contrast against background images.
+* **Footer links:** GitHub, LinkedIn, and email contact links with inline SVG icons.
+* **Performance & analytics:** site optimized for fast load times; traffic tracked via GoatCounter, with self-exclusion enabled.
 
-The site is built using **HTML, CSS, and Font Awesome**, developed in VSCode, and deployed via GitHub Pages.
+The site is built using **HTML, CSS, and JavaScript**, developed in VSCode, and deployed via GitHub Pages.
 
