@@ -15,7 +15,7 @@
     line-height: 1.6;
   }
   
-  /* Background image with subtle overlay */
+  /* Background image with overlay */
   body::before {
     content: "";
     position: fixed;
@@ -113,6 +113,10 @@
     font-size: 1rem;
   }
 
+  .section-overlay .project-link {
+    text-align: center;
+  }
+
   li ul {
     margin-left: 20px;
     list-style-type: disc;
@@ -178,7 +182,23 @@
     margin: 0;
     font-size: 0.95rem;
   }
+
+  .focus-list {
+  display: table;
+  margin: 0 auto;
+  text-align: left;
+  }
   
+   /* Project Link */
+  .project-link a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .project-link a:hover {
+    opacity: 0.7;
+  }
+
   /* -----------------------------
      Contact Form
   ----------------------------- */
