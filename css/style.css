@@ -36,9 +36,15 @@
   h1, h2, h3, h4, h5 {
     font-family: 'Nunito Sans', sans-serif;
     color: #2A3A4A;
+    line-height: 1.3;
   }
   
   h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  h2 {
     font-size: 2rem;
     margin-bottom: 20px;
   }
@@ -85,6 +91,7 @@
   .hero-text .title-line {
     font-weight: 400;
     font-size: 1.4rem;
+    margin-bottom: 20px;
   }
   
   /* -----------------------------
