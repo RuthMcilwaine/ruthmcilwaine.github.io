@@ -295,7 +295,7 @@
   }
 
   .project-link a:hover {
-    color: #0E4744;
+    color: #1A2430;
   }
 
   /* -----------------------------
@@ -344,7 +344,7 @@
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    background-color: #255E5A; /* muted teal, 7.4:1 with white text */
+    background-color: #2A3A4A; /* charcoal navy, 11:1 with white text */
     color: #ffffff;
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
@@ -352,7 +352,7 @@
   form button:hover,
   form button:focus-visible {
     transform: scale(1.05);
-    background-color: #0E4744;
+    background-color: #1A2430;
   }
 
   form button:disabled {
@@ -373,7 +373,7 @@
   }
 
   .form-status--success {
-    color: #0E4744;
+    color: #1A2430;
   }
 
   .form-status--error {
@@ -411,7 +411,7 @@
 }
 
 .hero-links a:hover {
-  color: #0E4744;
+  color: #1A2430;
   text-decoration: underline;
 }
 
@@ -433,7 +433,7 @@
 }
 
 .scroll-indicator a:hover {
-  color: #0E4744;
+  color: #1A2430;
   text-decoration: underline;
 }
 
@@ -472,7 +472,7 @@
   }
   
   .project-nav a:hover {
-    color: #0E4744;
+    color: #1A2430;
   text-decoration: underline;
   }
   
