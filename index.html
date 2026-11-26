@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,27 +25,32 @@
 </head>
 <body>
 
-  <!-- Hero / Banner -->
-  <section id="hero" class="hero-text">
-    <div class="text-container">
-    <div class="name-line">- RUTH -</div>
-    <div class="surname-line"><b>MCILWAINE</b></div>
-    <div class="title-line">Digital Experience & Web Delivery</div>
-    <div class="hero-links">
-      <a href="#about-me">About Me</a> |
-      <a href="#portfolio">Portfolio</a> |
-      <a href="#contact">Contact Me</a>
-    </div>
-    <div class="scroll-indicator">
-      <a href="#about-me" aria-label="Scroll Down">↓</a>
-    </div>
-  </div>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-  </section>
+  <!-- Hero / Banner -->
+  <header id="hero" class="hero-text">
+    <div class="text-container">
+      <h1 class="hero-name">
+        <span class="name-line"><span aria-hidden="true">- </span>Ruth<span aria-hidden="true"> -</span></span>
+        <span class="surname-line">McIlwaine</span>
+      </h1>
+      <p class="title-line">Digital Experience &amp; Web Delivery</p>
+      <nav class="hero-links" aria-label="Page sections">
+        <a href="#about-me">About Me</a> <span class="separator" aria-hidden="true">|</span>
+        <a href="#portfolio">Portfolio</a> <span class="separator" aria-hidden="true">|</span>
+        <a href="#contact">Contact Me</a>
+      </nav>
+      <div class="scroll-indicator">
+        <a href="#about-me" aria-label="Go to About Me"><span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
 
   <!-- About Me -->
-  <section id="about-me" class="section-overlay">
-    <h1>About Me</h1>
+  <section id="about-me" class="section-overlay" aria-labelledby="about-heading">
+    <h2 id="about-heading" class="section-title">About Me</h2>
       <p>I work with businesses and organisations to improve websites so they are clear, easy to use, and simple to maintain.</p>
       <p>With a background in product design, interior architecture, and enterprise SaaS development, I bring together design thinking and technical understanding to help turn complex systems into practical, usable websites.</p>
       <p>I’ve worked across WordPress sites, content-managed platforms, and front-end improvements, focusing on usability, accessibility, and keeping websites organised and easy to manage over time. I also help teams with updates and workflows so they can confidently maintain their sites after launch.</p>
@@ -52,68 +58,86 @@
   </section>
 
   <!-- Portfolio Overview -->
-  <section id="portfolio" class="section-overlay">
-    <h1>Portfolio</h1>
-    <div class="portfolio-grid">
-      <!-- Project cards -->
-      <a href="projects/glen.html" class="project-card" target="_blank" rel="noopener noreferrer" aria-label="View Project One">
-        <img src="images/new-homepage.png" alt="bowls club homepage">
-        <div class="card-overlay">
-          <h2>Glen Eira McKinnon Bowls Club</h2>
-          <p>Delivered a modern, user-friendly website for a community lawn bowls club.</p>
-        </div>
-      </a>
-      <a href="projects/netball.html" class="project-card" target="_blank" rel="noopener noreferrer" aria-label="View Project Two">
-        <img src="images/completed-homepage.png" alt="netball homepage">
-        <div class="card-overlay">
-          <h2>McKinnon Netball Club</h2>
-          <p>Improved website performance, SEO, and accessibility for the community netball club.</p>
-        </div>
-      </a>
-       <a href="projects/personal.html" class="project-card" target="_blank" rel="noopener noreferrer" aria-label="View Project Two">
-        <img src="images/personal-homepage.png" alt="project homepage">
-        <div class="card-overlay">
-          <h2>Personal WordPress Project</h2>
-          <p>Self-hosted WordPress site focused on CMS workflows, page structure, and deployment practice using a Synology environment.</p>
-        </div>
-       </a>
-    </div>
+  <section id="portfolio" class="section-overlay" aria-labelledby="portfolio-heading">
+    <h2 id="portfolio-heading" class="section-title">Portfolio</h2>
+    <ul class="portfolio-grid" role="list">
+      <!-- Project cards: the heading inside each link names it, so the screenshot is decorative -->
+      <li>
+        <a href="projects/glen.html" class="project-card">
+          <img src="images/new-homepage.png" alt="">
+          <div class="card-overlay">
+            <h3>Glen Eira McKinnon Bowls Club</h3>
+            <p>Delivered a modern, user-friendly website for a community lawn bowls club.</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="projects/netball.html" class="project-card">
+          <img src="images/completed-homepage.png" alt="">
+          <div class="card-overlay">
+            <h3>McKinnon Netball Club</h3>
+            <p>Improved website performance, SEO, and accessibility for the community netball club.</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="projects/personal.html" class="project-card">
+          <img src="images/personal-homepage.png" alt="">
+          <div class="card-overlay">
+            <h3>Personal WordPress Project</h3>
+            <p>Self-hosted WordPress site focused on CMS workflows, page structure, and deployment practice using a Synology environment.</p>
+          </div>
+        </a>
+      </li>
+    </ul>
   </section>
 
-  <!-- Contact Overlay -->
-  <section id="contact" class="section-overlay">
-    <h1>Contact Me</h1>
-    <form
-      action="https://formspree.io/f/mvzbzree"
-      method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="text" name="subject" placeholder="Subject" required>
-      <textarea name="message" placeholder="Your Message" style="height:200px" required></textarea>
+  <!-- Contact -->
+  <section id="contact" class="section-overlay" aria-labelledby="contact-heading">
+    <h2 id="contact-heading" class="section-title">Contact Me</h2>
+    <form action="https://formspree.io/f/mvzbzree" method="POST" aria-describedby="form-note">
+      <p id="form-note" class="form-note">All fields are required.</p>
+
+      <label for="contact-name">Your name</label>
+      <input type="text" id="contact-name" name="name" autocomplete="name" required>
+
+      <label for="contact-email">Your email</label>
+      <input type="email" id="contact-email" name="email" autocomplete="email" required>
+
+      <label for="contact-subject">Subject</label>
+      <input type="text" id="contact-subject" name="subject" required>
+
+      <label for="contact-message">Your message</label>
+      <textarea id="contact-message" name="message" rows="8" required></textarea>
+
       <button type="submit">Send</button>
     </form>
   </section>
+
+  </main>
    <!-- Footer -->
    <footer id="footer" class="footer">
+    <nav aria-label="Contact links">
     <div class="footer-icons">
-      <a href="https://www.linkedin.com/in/ruthmcilwaine/" target="_blank" title="LinkedIn">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff">
+      <a href="https://www.linkedin.com/in/ruthmcilwaine/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff" aria-hidden="true" focusable="false">
           <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.2h.1c.65-1.2 2.25-2.2 4.65-2.2 4.97 0 5.9 3.27 5.9 7.52V24h-5v-7.8c0-1.85-.03-4.22-2.57-4.22-2.57 0-2.97 2.01-2.97 4.09V24h-5V8z"/>
         </svg>
       </a>
   
-      <a href="https://github.com/ruthmcilwaine" target="_blank" title="GitHub">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff">
+      <a href="https://github.com/ruthmcilwaine" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff" aria-hidden="true" focusable="false">
           <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.42 7.86 10.96.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.69-3.88-1.55-3.88-1.55-.53-1.36-1.3-1.72-1.3-1.72-1.07-.73.08-.72.08-.72 1.18.08 1.8 1.21 1.8 1.21 1.05 1.79 2.75 1.27 3.42.97.11-.76.41-1.27.75-1.56-2.56-.29-5.25-1.28-5.25-5.71 0-1.26.45-2.3 1.2-3.11-.12-.29-.52-1.46.12-3.04 0 0 .98-.31 3.2 1.19.92-.26 1.9-.39 2.88-.39.98 0 1.96.13 2.88.39 2.21-1.5 3.19-1.19 3.19-1.19.64 1.58.24 2.75.12 3.04.75.81 1.2 1.85 1.2 3.11 0 4.44-2.7 5.42-5.27 5.7.42.36.79 1.09.79 2.2 0 1.58-.01 2.85-.01 3.23 0 .31.21.67.8.55C20.71 21.42 24 17.09 24 12c0-6.27-5.23-11.5-12-11.5z"/>
         </svg>
       </a>
   
-      <a href="mailto:ruthmcilwaine@gmail.com" target="_blank" title="Email">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff">
+      <a href="mailto:ruthmcilwaine@gmail.com" aria-label="Email Ruth">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff" aria-hidden="true" focusable="false">
           <path d="M20 4H4C2.897 4 2 4.897 2 6v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 5.333-8-5.333V6h16zM4 18V8.489l7.555 5.037c.293.195.654.195.947 0L20 8.489V18H4z"/>
         </svg>
       </a>
-    </div> 
+    </div>
+    </nav>
     <div class="footer-copyright">
       &copy; 2026 Ruth McIlwaine. All Rights Reserved.
     </div>
